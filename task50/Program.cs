@@ -31,10 +31,11 @@ void FindItemByValue(int[,] arr)
             if (arr[i,j] == num)
             {
                 Console.WriteLine($"число находится на позиции {i},{j} ");
+                return;
             }
-            else Console.WriteLine("такого числа в массиве нет");
         }
     }
+    Console.WriteLine("такого числа в массиве нет");
 }
 
 void FindItemByPosition(int[,] arr)
